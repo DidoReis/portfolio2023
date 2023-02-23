@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
-import backgroundImg from "../../assets/img/BackgroundImg.png";
-import backgroundImg2 from "../../assets/img/BackgroundImg2.png";
+import backgroundImg from "../assets/img/BackgroundImg.png";
+import backgroundImg2 from "../assets/img/BackgroundImg2.png";
 
 function BackgroundImg() {
   return (

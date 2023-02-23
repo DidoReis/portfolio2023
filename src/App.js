@@ -11,6 +11,9 @@ import Home from "./scenes/home/home";
 import Quemsou from "./scenes/quemsou/quemsou";
 import Experience from "./scenes/experience/experience";
 import Websites from "./scenes/websites/websites";
+import Projects from "./scenes/projects/projects";
+import Projects2 from "./scenes/projects/projects2";
+import Contact from "./scenes/contact/contact";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -35,6 +38,9 @@ function App() {
               <Route path="/quemsou" element={<Quemsou />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/websites" element={<Websites />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects2" element={<Projects2 />} />
+              <Route path="/contact" element={<Contact />} />
             </Route>
           </Routes>
         </ThemeProvider>

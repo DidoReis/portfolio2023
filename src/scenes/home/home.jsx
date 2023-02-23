@@ -8,8 +8,9 @@ import RectangleY from "../../components/rectangleY";
 import RectangleMiddle from "../../components/home/rectangleMiddle";
 import RectangleName from "../../components/home/rectangleName";
 import BoxTitle from "../../components/home/boxTitle";
-import BackgroundImg from "../../components/home/backgroundImg";
+import BackgroundImg from "../../components/backgroundImg";
 import RectangleX from "../../components/rectangleX";
+import BoxName from "../../components/BoxName";
 
 function Home() {
   const theme = useTheme();

@@ -1,11 +1,13 @@
 import React from "react";
 
 import { Box, Typography, useTheme } from "@mui/material";
-import RightArrow from "../../assets/img/right-dark.png";
-import DarkLight from "../../components/DarkLight";
+import RightArrow from "../assets/img/right-dark.png";
+import leftArrow from "../assets/img/left-dark.png";
+import DarkLight from "../components/DarkLight";
 
-function RectangleName() {
+function BoxName({ name, last }) {
   const theme = useTheme();
+
   return (
     <Box
       sx={{
@@ -38,7 +40,7 @@ function RectangleName() {
             lineHeight: "56.35px",
           }}
         >
-          Edivando
+          {name}
         </Typography>
         <Typography
           className="lastName"
@@ -53,7 +55,7 @@ function RectangleName() {
             top: "calc(35% - 23px/2 + 17.5px)",
           }}
         >
-          Reis de Siqueira
+          {last}
         </Typography>
         <Typography
           sx={{
@@ -68,22 +70,24 @@ function RectangleName() {
           fontSize="20px"
           lineHeight="23px"
           textAlign="right"
-        >
-          Front-End
-        </Typography>
+        ></Typography>
       </Box>
       <Box
         sx={{
+          display: "flex",
           position: "absolute",
           width: "92px",
           height: "46px",
           top: "70px",
-          left: "300px",
+          left: "380px",
         }}
       >
-        <a href={`/quemsou`}>
+        <Box position="absolute" right="100px" component="a" href="/experience">
+          <img src={leftArrow} alt="" />
+        </Box>
+        <Box component="a" href="/projects">
           <img src={RightArrow} alt="" />
-        </a>
+        </Box>
       </Box>
       <Box
         sx={{
@@ -91,7 +95,7 @@ function RectangleName() {
 
           width: "26px",
           height: "26px",
-          left: "366px",
+          left: "445px",
           top: "130px",
         }}
       >
@@ -101,4 +105,4 @@ function RectangleName() {
   );
 }
 
-export default RectangleName;
+export default BoxName;
